@@ -1,0 +1,679 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "4cb1e239-67fa-4dcb-a563-69482621eb05",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": -304.8,
+      "y": 60
+    },
+    "ActionMetadata": {
+      "29b66747-a4e0-415b-8243-acacae51fde3": {
+        "position": {
+          "x": -218.4,
+          "y": -15.2
+        },
+        "children": [
+          "9db514c8-fd85-4ca7-8321-397f568201ff"
+        ],
+        "overrideConsoleVoice": false,
+        "fragments": {
+          "SetContactData": "9db514c8-fd85-4ca7-8321-397f568201ff"
+        },
+        "overrideLanguageAttribute": true
+      },
+      "9db514c8-fd85-4ca7-8321-397f568201ff": {
+        "position": {
+          "x": -218.4,
+          "y": -15.2
+        },
+        "dynamicParams": []
+      },
+      "4cb1e239-67fa-4dcb-a563-69482621eb05": {
+        "position": {
+          "x": -220.8,
+          "y": 141.6
+        }
+      },
+      "ba0186e0-7d20-46a1-8054-11f6f00df171": {
+        "position": {
+          "x": 1101.6,
+          "y": 400
+        }
+      },
+      "e1487274-b9b7-403e-bbeb-8365b30bc43d": {
+        "position": {
+          "x": 660,
+          "y": 348.8
+        },
+        "parameters": {
+          "QueueId": {
+            "displayName": "Emergency Queue"
+          }
+        },
+        "queue": {
+          "text": "Emergency Queue"
+        }
+      },
+      "47eca640-e730-4cdb-8517-3819e05d49e9": {
+        "position": {
+          "x": 440,
+          "y": 351.2
+        }
+      },
+      "72b35686-a4f8-416e-b0c9-cef503d4bb88": {
+        "position": {
+          "x": 880,
+          "y": 351.2
+        }
+      },
+      "7b07a20e-123d-4b47-9f0b-c2d8ff261a29": {
+        "position": {
+          "x": 1322.4,
+          "y": 158.4
+        }
+      },
+      "8d049ee4-565e-4aa5-b3de-23f8e09563a3": {
+        "position": {
+          "x": 441.6,
+          "y": 170.4
+        }
+      },
+      "938fec05-0ba4-4b64-b946-5ddb2f7ed1b6": {
+        "position": {
+          "x": 0,
+          "y": 16
+        }
+      },
+      "66636283-e022-4916-931c-bbe9d064810a": {
+        "position": {
+          "x": 220.8,
+          "y": 265.6
+        }
+      },
+      "SwitchboardInput": {
+        "position": {
+          "x": 216,
+          "y": -31.2
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "LexV2Bot": {
+            "AliasArn": {
+              "displayName": "TestBotAlias",
+              "useLexBotDropdown": true,
+              "lexV2BotName": "Switchboard"
+            }
+          }
+        },
+        "useLexBotDropdown": true,
+        "lexV2BotName": "Switchboard",
+        "lexV2BotAliasName": "TestBotAlias",
+        "conditionMetadata": [
+          {
+            "id": "e7519c37-33c9-488a-ab77-a40925e009aa",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "ReportPest"
+          },
+          {
+            "id": "d4dd5b85-b182-4a9d-a376-5c6bc489803c",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "RequestControl"
+          },
+          {
+            "id": "829c9535-036b-4429-ac75-2566104a63e1",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "HumanAgent"
+          }
+        ]
+      },
+      "6240bd31-f835-404b-9f61-ab31626371b1": {
+        "position": {
+          "x": 881.6,
+          "y": 139.2
+        }
+      },
+      "16adf82f-29ee-492d-bc19-79d8064c9cda": {
+        "position": {
+          "x": 1100,
+          "y": 220.8
+        }
+      },
+      "PestControlInput": {
+        "position": {
+          "x": 656.8,
+          "y": 120.8
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "LexV2Bot": {
+            "AliasArn": {
+              "displayName": "TestBotAlias",
+              "useLexBotDropdown": true,
+              "lexV2BotName": "PestControlAssistance"
+            }
+          }
+        },
+        "useLexBotDropdown": true,
+        "lexV2BotName": "PestControlAssistance",
+        "lexV2BotAliasName": "TestBotAlias",
+        "conditionMetadata": [
+          {
+            "id": "e4781734-b4d1-451d-8ca2-4e043ecaaf43",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "Yes"
+          }
+        ]
+      },
+      "0ce0d081-06ae-449b-9f5f-803f9cd08afb": {
+        "position": {
+          "x": 881.6,
+          "y": -85.6
+        }
+      },
+      "654a3ffc-e35d-477c-a7a0-25bf27716580": {
+        "position": {
+          "x": 1099.2,
+          "y": -139.2
+        }
+      },
+      "Check Transfer Target": {
+        "position": {
+          "x": 440.8,
+          "y": -80.8
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "905b2d32-b3b4-49e8-8c43-fefc2cfe0a37",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": ".PestReporting"
+          },
+          {
+            "id": "7add517f-a986-41e4-a279-21c85e2294ba",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": ".PestControlAssistance"
+          },
+          {
+            "id": "c8042adc-f7ae-4b30-abe3-5335d0aa6944",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": ".HumanAgent"
+          }
+        ]
+      },
+      "e290edf0-355a-4dbf-b4b5-7d3031f4ce07": {
+        "position": {
+          "x": 1100,
+          "y": 40.8
+        }
+      },
+      "PestReportingInput": {
+        "position": {
+          "x": 657.6,
+          "y": -92.8
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "LexV2Bot": {
+            "AliasArn": {
+              "displayName": "TestBotAlias",
+              "useLexBotDropdown": true,
+              "lexV2BotName": "PestReporting"
+            }
+          }
+        },
+        "useLexBotDropdown": true,
+        "lexV2BotName": "PestReporting",
+        "lexV2BotAliasName": "TestBotAlias",
+        "conditionMetadata": [
+          {
+            "id": "c3440533-0a66-4164-8a71-bca06635fef9",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "Yes"
+          }
+        ]
+      }
+    },
+    "Annotations": [],
+    "name": "Flow1",
+    "description": "",
+    "type": "contactFlow",
+    "status": "PUBLISHED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {
+        "TextToSpeechVoice": "Amy"
+      },
+      "Identifier": "29b66747-a4e0-415b-8243-acacae51fde3",
+      "Type": "UpdateContactTextToSpeechVoice",
+      "Transitions": {
+        "NextAction": "9db514c8-fd85-4ca7-8321-397f568201ff"
+      }
+    },
+    {
+      "Parameters": {
+        "LanguageCode": "en-GB"
+      },
+      "Identifier": "9db514c8-fd85-4ca7-8321-397f568201ff",
+      "Type": "UpdateContactData",
+      "Transitions": {
+        "NextAction": "938fec05-0ba4-4b64-b946-5ddb2f7ed1b6",
+        "Errors": [
+          {
+            "NextAction": "938fec05-0ba4-4b64-b946-5ddb2f7ed1b6",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "FlowLoggingBehavior": "Enabled"
+      },
+      "Identifier": "4cb1e239-67fa-4dcb-a563-69482621eb05",
+      "Type": "UpdateFlowLoggingBehavior",
+      "Transitions": {
+        "NextAction": "29b66747-a4e0-415b-8243-acacae51fde3"
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "We are currently busy, please call back"
+      },
+      "Identifier": "ba0186e0-7d20-46a1-8054-11f6f00df171",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "7b07a20e-123d-4b47-9f0b-c2d8ff261a29",
+        "Errors": [
+          {
+            "NextAction": "7b07a20e-123d-4b47-9f0b-c2d8ff261a29",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "QueueId": "arn:aws:connect:us-east-1:193532328781:instance/3fc268f7-6d4f-465f-add6-595e6b1e4992/queue/4dbf6615-6cf5-48c2-baaa-cf8e8a0cc8e9"
+      },
+      "Identifier": "e1487274-b9b7-403e-bbeb-8365b30bc43d",
+      "Type": "UpdateContactTargetQueue",
+      "Transitions": {
+        "NextAction": "72b35686-a4f8-416e-b0c9-cef503d4bb88",
+        "Errors": [
+          {
+            "NextAction": "e290edf0-355a-4dbf-b4b5-7d3031f4ce07",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Please hold while we connect you to an agent. You will be transferred shortly."
+      },
+      "Identifier": "47eca640-e730-4cdb-8517-3819e05d49e9",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "e1487274-b9b7-403e-bbeb-8365b30bc43d",
+        "Errors": [
+          {
+            "NextAction": "e290edf0-355a-4dbf-b4b5-7d3031f4ce07",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "72b35686-a4f8-416e-b0c9-cef503d4bb88",
+      "Type": "TransferContactToQueue",
+      "Transitions": {
+        "NextAction": "e290edf0-355a-4dbf-b4b5-7d3031f4ce07",
+        "Errors": [
+          {
+            "NextAction": "ba0186e0-7d20-46a1-8054-11f6f00df171",
+            "ErrorType": "QueueAtCapacity"
+          },
+          {
+            "NextAction": "e290edf0-355a-4dbf-b4b5-7d3031f4ce07",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "7b07a20e-123d-4b47-9f0b-c2d8ff261a29",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "Text": "I'm sorry, there is no match to your query."
+      },
+      "Identifier": "8d049ee4-565e-4aa5-b3de-23f8e09563a3",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "SwitchboardInput",
+        "Errors": [
+          {
+            "NextAction": "e290edf0-355a-4dbf-b4b5-7d3031f4ce07",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Thank you for calling the NHS Pest Control Service. Please tell us how we can assist you today."
+      },
+      "Identifier": "938fec05-0ba4-4b64-b946-5ddb2f7ed1b6",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "SwitchboardInput",
+        "Errors": [
+          {
+            "NextAction": "e290edf0-355a-4dbf-b4b5-7d3031f4ce07",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "I'm sorry, I didn’t catch that. Could you please repeat?"
+      },
+      "Identifier": "66636283-e022-4916-931c-bbe9d064810a",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "Check Transfer Target",
+        "Errors": [
+          {
+            "NextAction": "e290edf0-355a-4dbf-b4b5-7d3031f4ce07",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Say 'Report a Pest' if you are experiencing a pest issue that you would like to report.\n\nSay 'Request Control' if you need professional pest control assistance.\n\nOr, say 'Emergency' if this is an urgent situation requiring immediate attention.",
+        "LexV2Bot": {
+          "AliasArn": "arn:aws:lex:us-east-1:193532328781:bot-alias/BWGLWVT3NH/TSTALIASID"
+        }
+      },
+      "Identifier": "SwitchboardInput",
+      "Type": "ConnectParticipantWithLexBot",
+      "Transitions": {
+        "NextAction": "e290edf0-355a-4dbf-b4b5-7d3031f4ce07",
+        "Conditions": [
+          {
+            "NextAction": "Check Transfer Target",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ReportPest"
+              ]
+            }
+          },
+          {
+            "NextAction": "Check Transfer Target",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "RequestControl"
+              ]
+            }
+          },
+          {
+            "NextAction": "Check Transfer Target",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "HumanAgent"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "66636283-e022-4916-931c-bbe9d064810a",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "e290edf0-355a-4dbf-b4b5-7d3031f4ce07",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "I'm sorry, I didn’t catch that. Could you please repeat?"
+      },
+      "Identifier": "6240bd31-f835-404b-9f61-ab31626371b1",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "PestControlInput",
+        "Errors": [
+          {
+            "NextAction": "e290edf0-355a-4dbf-b4b5-7d3031f4ce07",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Your pest control assistance request has been processed. A specialist will contact you shortly to arrange the visit. Thank you. Bye."
+      },
+      "Identifier": "16adf82f-29ee-492d-bc19-79d8064c9cda",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "7b07a20e-123d-4b47-9f0b-c2d8ff261a29",
+        "Errors": [
+          {
+            "NextAction": "e290edf0-355a-4dbf-b4b5-7d3031f4ce07",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "\"You selected 'Request Control.'\n\nPlease respond with 'yes' to confirm",
+        "LexV2Bot": {
+          "AliasArn": "arn:aws:lex:us-east-1:193532328781:bot-alias/ZF7QPZD9CE/TSTALIASID"
+        }
+      },
+      "Identifier": "PestControlInput",
+      "Type": "ConnectParticipantWithLexBot",
+      "Transitions": {
+        "NextAction": "e290edf0-355a-4dbf-b4b5-7d3031f4ce07",
+        "Conditions": [
+          {
+            "NextAction": "16adf82f-29ee-492d-bc19-79d8064c9cda",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "Yes"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "6240bd31-f835-404b-9f61-ab31626371b1",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "e290edf0-355a-4dbf-b4b5-7d3031f4ce07",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "I'm sorry, I didn’t catch that. Could you please repeat?"
+      },
+      "Identifier": "0ce0d081-06ae-449b-9f5f-803f9cd08afb",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "PestReportingInput",
+        "Errors": [
+          {
+            "NextAction": "e290edf0-355a-4dbf-b4b5-7d3031f4ce07",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Thank you for reporting the issue. Your pest report has been logged, and our team will review it shortly. We may contact you if further information is required. Bye"
+      },
+      "Identifier": "654a3ffc-e35d-477c-a7a0-25bf27716580",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "7b07a20e-123d-4b47-9f0b-c2d8ff261a29",
+        "Errors": [
+          {
+            "NextAction": "e290edf0-355a-4dbf-b4b5-7d3031f4ce07",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.$.Lex.SessionAttributes.transferTarget"
+      },
+      "Identifier": "Check Transfer Target",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "8d049ee4-565e-4aa5-b3de-23f8e09563a3",
+        "Conditions": [
+          {
+            "NextAction": "PestReportingInput",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                ".PestReporting"
+              ]
+            }
+          },
+          {
+            "NextAction": "PestControlInput",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                ".PestControlAssistance"
+              ]
+            }
+          },
+          {
+            "NextAction": "47eca640-e730-4cdb-8517-3819e05d49e9",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                ".HumanAgent"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "8d049ee4-565e-4aa5-b3de-23f8e09563a3",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "We're sorry, an error occurred. Please try again later. Goodbye."
+      },
+      "Identifier": "e290edf0-355a-4dbf-b4b5-7d3031f4ce07",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "7b07a20e-123d-4b47-9f0b-c2d8ff261a29",
+        "Errors": [
+          {
+            "NextAction": "7b07a20e-123d-4b47-9f0b-c2d8ff261a29",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "You selected \"Report a Pest.\"\n\nPlease respond with \"yes\" to confirm.",
+        "LexV2Bot": {
+          "AliasArn": "arn:aws:lex:us-east-1:193532328781:bot-alias/E8ZF8JIKL9/TSTALIASID"
+        }
+      },
+      "Identifier": "PestReportingInput",
+      "Type": "ConnectParticipantWithLexBot",
+      "Transitions": {
+        "NextAction": "e290edf0-355a-4dbf-b4b5-7d3031f4ce07",
+        "Conditions": [
+          {
+            "NextAction": "654a3ffc-e35d-477c-a7a0-25bf27716580",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "Yes"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "0ce0d081-06ae-449b-9f5f-803f9cd08afb",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "e290edf0-355a-4dbf-b4b5-7d3031f4ce07",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    }
+  ]
+}
